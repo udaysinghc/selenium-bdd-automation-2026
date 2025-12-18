@@ -1,103 +1,115 @@
 ### 🚀 Selenium BDD Automation Framework 2026
-** 📌 Overview **
+**📌 Overview**
 
 The Selenium BDD Automation Framework 2026 is a robust, Maven-based test automation framework built using Selenium WebDriver, Cucumber (BDD), and TestNG.
 It follows industry best practices such as the Page Object Model (POM) design pattern and provides rich reporting through Allure Reports. The framework is designed for scalability, maintainability, and cross-browser execution.
+---
 
-Recommended Java Version: Java 17
+**Recommended Java Version: Java 17**
+---
 
-Architecture & Design
+## Architecture & Design
 
-Maven-based project structure
+- Maven-based project structure
 
-Behavior-Driven Development (BDD) using Cucumber
+- Behavior-Driven Development (BDD) using Cucumber
 
-Page Object Model (POM) for clean separation of test logic
+- Page Object Model (POM) for clean separation of test logic
 
-Test execution and parallelization using TestNG
+- Test execution and parallelization using TestNG
 
-Environment-driven configuration (QA, Stage)
+- Environment-driven configuration (QA, Stage)
 
-Centralized utilities and reusable components
+- Centralized utilities and reusable components
 
-Technology Stack
+---
 
-Java 17
+## Technology Stack
 
-Selenium WebDriver 4
+- Java 17
 
-Cucumber (BDD)
+- Selenium WebDriver 4
 
-TestNG
+- Cucumber (BDD)
 
-Maven
+- TestNG
 
-Allure Reporting
+- Maven
 
-Log4j2
+- Allure Reporting
 
-Key Features
+- Log4j2
 
-Modular Maven project structure
+---
 
-BDD implementation with readable Gherkin feature files
+## Key Features
 
-Page Object Model for better maintainability
+- Modular Maven project structure
 
-Cross-browser testing (Chrome, Firefox, Edge)
+- BDD implementation with readable Gherkin feature files
 
-Headless browser execution support
+- Page Object Model for better maintainability
 
-Environment-specific configurations
+- Cross-browser testing (Chrome, Firefox, Edge)
 
-Retry mechanism for flaky test cases
+- Headless browser execution support
 
-Explicit wait and JavaScript utilities
+- Environment-specific configurations
 
-Centralized constants management
+- Retry mechanism for flaky test cases
 
-Automatic screenshot capture on test failure
+- Explicit wait and JavaScript utilities
 
-Log4j2 logging (console and file)
+- Centralized constants management
 
-Detailed Allure HTML reports
+- Automatic screenshot capture on test failure
 
-Project Structure (High Level)
+- Log4j2 logging (console and file)
 
-base – Test initialization and WebDriver setup
+- Detailed Allure HTML reports
 
-config – Environment and property management
+---
 
-pages – Page classes and reusable UI actions
+## Project Structure (High Level)
 
-utils – Waits, JavaScript helpers, constants
+- base – Test initialization and WebDriver setup
 
-retryanalyzer – Retry logic for failed tests
+- config – Environment and property management
 
-features – Cucumber feature files
+- pages – Page classes and reusable UI actions
 
-stepdefinitions – Step implementations and hooks
+- utils – Waits, JavaScript helpers, constants
 
-runners – Test execution entry points
+- retryanalyzer – Retry logic for failed tests
 
-Prerequisites
+- features – Cucumber feature files
+
+- stepdefinitions – Step implementations and hooks
+
+- runners – Test execution entry points
+
+---
+
+## Prerequisites
 
 Ensure the following are installed:
 
-Java JDK 17 or higher
+- Java JDK 17 or higher
 
-Maven 3.6 or higher
+- Maven 3.6 or higher
 
-Allure Command Line
+- Allure Command Line
 
-Chrome / Firefox / Edge browser
+- Chrome / Firefox / Edge browser
 
-Verify installations:
+**Verify installations:**
 
 java -version
 mvn -version
 
-Configuration
+--- 
+
+## Configuration
 
 Environment configuration files are located under:
 src/main/resources/
@@ -111,38 +123,44 @@ implicit.wait=10
 explicit.wait=20
 page.load.timeout=30
 
-Test Execution
+---
 
-Run all tests:
+## Test Execution
+
+**Run all tests:**
 
 mvn clean test
 
 
-Run tests on a specific environment:
+**Run tests on a specific environment:**
 
 mvn clean test -Denv=qa
 mvn clean test -Denv=stage
 
 
-Run tests using tags:
+**Run tests using tags:**
 
 mvn clean test -Dcucumber.filter.tags="@smoke"
 mvn clean test -Dcucumber.filter.tags="@regression"
 
-Reporting
+---
+
+## Reporting
 
 Allure reports provide detailed execution insights including steps, screenshots, and logs.
 
-Generate report:
+**Generate report:**
 
 allure generate target/allure-results --clean -o allure-report
 
 
-Open report:
+**Open report:**
 
 allure open allure-report
 
-Logging & Screenshots
+---
+
+## Logging & Screenshots
 
 Logs are generated at: logs/automation.log
 
