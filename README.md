@@ -1,5 +1,6 @@
 ### 🚀 Selenium BDD Automation Framework 2026
-**📌 Overview**
+
+## **📌 Overview**
 
 The Selenium BDD Automation Framework 2026 is a robust, Maven-based test automation framework built using Selenium WebDriver, Cucumber (BDD), and TestNG.
 It follows industry best practices such as the Page Object Model (POM) design pattern and provides rich reporting through Allure Reports. The framework is designed for scalability, maintainability, and cross-browser execution.
